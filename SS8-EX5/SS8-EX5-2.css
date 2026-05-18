@@ -1,0 +1,626 @@
+/* --- RESET STYLES --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #fcfcfd;
+    color: #23262F;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    background: #ffffff;
+    border-bottom: 1px solid #E6E8EC;
+    padding: 16px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.currency {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.currency img {
+    width: 18px;
+    border-radius: 2px;
+}
+
+.notification {
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+    color: #777E90;
+}
+
+.notification .badge {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 8px;
+    height: 8px;
+    background-color: #FF6A55;
+    border-radius: 50%;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.user-profile img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+/* --- BREADCRUMB --- */
+.breadcrumb {
+    padding: 24px 0;
+    font-size: 14px;
+    color: #777E90;
+}
+
+.breadcrumb a {
+    color: #777E90;
+    text-decoration: none;
+}
+
+.breadcrumb .active {
+    color: #B1B5C3;
+}
+
+/* --- LAYOUT GRID --- */
+.main-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 64px;
+    margin-bottom: 64px;
+}
+
+@media (min-width: 992px) {
+    .main-layout {
+        grid-template-columns: 7fr 4fr;
+    }
+}
+
+/* --- LEFT COLUMN: PAYMENT --- */
+.page-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.form-group-section {
+    margin-bottom: 40px;
+}
+
+.form-group-section h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+/* Tour Info Box */
+.tour-info-box {
+    border: 1px solid #E6E8EC;
+    border-radius: 12px;
+    padding: 8px 16px;
+    background: #f4f5f6;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.info-row:not(:last-child) {
+    border-bottom: 1px solid #E6E8EC;
+}
+
+.info-row label {
+    font-size: 12px;
+    color: #777E90;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.info-row p {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.edit-btn {
+    background: #ffffff;
+    border: 1px solid #E6E8EC;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #777E90;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Credit Card Brands Selector */
+.card-brands {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.brand {
+    border: 1px solid #E6E8EC;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    position: relative;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    background: white;
+}
+
+.brand img {
+    height: 20px;
+}
+
+.brand.active {
+    border-color: #3b71fe;
+}
+
+.brand .check-icon {
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    background: #3b71fe;
+    color: white;
+    font-size: 8px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Saved Cards Visual Mockup */
+.saved-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+@media (min-width: 576px) {
+    .saved-cards-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.credit-card-ui {
+    border-radius: 16px;
+    padding: 24px;
+    color: #23262F;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 160px;
+}
+
+.mastercard-theme {
+    background: #C4D1FF;
+}
+
+.visa-theme {
+    background: #CCDDB7;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.card-number-display {
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin: 16px 0;
+    font-weight: 500;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+/* Inputs styling */
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-wrapper label {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #777E90;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon .valid-check {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3b71fe;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #E6E8EC;
+    background-color: #f4f5f6;
+    border-radius: 12px;
+    font-size: 14px;
+    outline: none;
+    color: #23262F;
+}
+
+input:focus {
+    border-color: #B1B5C3;
+}
+
+.input-row-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.checkbox-wrapper input {
+    width: 20px;
+    height: 20px;
+    accent-color: #3b71fe;
+    cursor: pointer;
+}
+
+.checkbox-wrapper label {
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #3b71fe;
+    color: white;
+    border: none;
+    padding: 16px 24px;
+    border-radius: 24px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    width: max-content;
+    margin-top: 12px;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background: #2656d6;
+}
+
+
+/* --- RIGHT COLUMN: SIDEBAR DETAILS --- */
+.sidebar-section .sticky-sidebar {
+    border: 1px solid #E6E8EC;
+    border-radius: 20px;
+    padding: 24px;
+    background: white;
+}
+
+@media (min-width: 992px) {
+    .sidebar-section .sticky-sidebar {
+        position: sticky;
+        top: 24px;
+    }
+}
+
+.sidebar-header h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+}
+
+.rating i {
+    color: #FFD166;
+}
+
+.rating .reviews {
+    color: #777E90;
+}
+
+.sidebar-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 24px 0;
+}
+
+.room-info {
+    font-size: 14px;
+    color: #777E90;
+    margin-bottom: 24px;
+}
+
+.dates-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.dates-grid label, .guests-info label {
+    font-size: 12px;
+    color: #777E90;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.dates-grid p, .guests-info p {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.guests-info {
+    margin-bottom: 32px;
+}
+
+.booked-details h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: #777E90;
+}
+
+.price-row strong {
+    color: #23262F;
+}
+
+.booked-details hr {
+    border: 0;
+    border-top: 1px solid #E6E8EC;
+    margin: 16px 0;
+}
+
+.total-row {
+    font-size: 16px;
+    font-weight: 700;
+    color: #23262F;
+}
+
+.total-row strong {
+    font-size: 18px;
+}
+
+.report-link {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.report-link a {
+    font-size: 12px;
+    color: #B1B5C3;
+    text-decoration: none;
+}
+
+
+/* --- PRO OFFERS BANNER --- */
+.promo-banner {
+    background: #3b71fe;
+    border-radius: 20px;
+    padding: 64px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 64px;
+}
+
+@media (min-width: 768px) {
+    .promo-banner {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+.promo-content h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.promo-content p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.promo-form {
+    display: flex;
+    background: white;
+    padding: 8px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.promo-form input {
+    border: none;
+    background: transparent;
+    padding: 12px;
+    flex: 1;
+    color: #23262F;
+}
+
+.promo-form button {
+    background: #23262F;
+    color: white;
+    border: none;
+    padding: 0 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* --- FOOTER --- */
+.footer {
+    border-top: 1px solid #E6E8EC;
+    padding: 64px 0;
+    background: #ffffff;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+@media (min-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+}
+
+.footer-brand p {
+    font-size: 14px;
+    color: #777E90;
+    margin: 24px 0;
+    line-height: 1.6;
+    max-width: 260px;
+}
+
+.theme-toggle {
+    display: flex;
+    background: #f4f5f6;
+    padding: 4px;
+    border-radius: 20px;
+    width: max-content;
+}
+
+.theme-toggle button {
+    border: none;
+    background: transparent;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #777E90;
+}
+
+.theme-toggle button.active {
+    background: white;
+    color: #23262F;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.footer h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li {
+    margin-bottom: 12px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #777E90;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.footer ul li a:hover {
+    color: #3b71fe;
+}

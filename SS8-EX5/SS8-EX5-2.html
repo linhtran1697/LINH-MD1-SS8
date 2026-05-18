@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripGuide - Confirm and Pay</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./SS8-EX5-2.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-plane-departure" style="color: #3b71fe;"></i>
+                <span>TripGuide</span>
+            </div>
+        <div class="nav-right">
+            <span class="currency">USD <img src="https://flagcdn.com/w20/us.png" alt="US Flag"></span>
+                <div class="notification">
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="badge"></span>
+                </div>
+                <div class="user-profile">
+                    <img src="https://i.pravatar.cc/40" alt="Avatar">
+                    <span>Delowar</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+        </div>
+        </div>
+    </header>
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="#">Home</a> > <a href="#">Hotel list</a> > <a href="#">Hotel details</a> > <span class="active">Confirm and pay</span>
+        </nav>
+    </div>
+    <main class="container main-layout">
+        <section class="payment-section">
+            <h1 class="page-title">Confirm your Book</h1>
+            <div class="form-group-section">
+                <h2>Your tour</h2>
+                <div class="tour-info-box">
+                  <div class="info-row">
+                   <div>
+                     <label>Date</label>
+                     <p>June 27 - 30, 2020</p> 
+                   </div>
+                   <button class="edit-btn"><i class="fa-solid fa-pen"></i></button>
+                  </div>
+                <div class="info-row">
+                   <div>
+                     <label>Traveller</label>
+                     <p>1 Passenger</p>
+                    </div>
+                    <button class="edit-btn"><i class="fa-solid fa-pen"></i></button>
+                  </div>
+                </div>
+            </div>
+            <div class="form-group-section">
+                <div class="brand active">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard">
+                        <span class="check-icon">✓</span>
+                    </div>
+                    <div class="brand">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal">
+                    </div>
+                    <div class="brand">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa">
+                    </div>
+                    <div class="brand">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" alt="Amex">
+                    </div>
+            </div>
+            <div class="saved-cards-grid">
+                <div class="credit-card-ui mastercard-theme">
+                        <div class="card-top">
+                            <i class="fa-solid fa-microchip text-xl"></i>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <div class="card-number-display">8948 xxxx xxxx 7894</div>
+                        <div class="card-bottom">
+                            <span>Holder Name</span>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" width="30" alt="Mastercard">
+                        </div>
+                </div>
+            </div>
+            <div class="credit-card-ui visa-theme">
+                        <div class="card-top">
+                            <i class="fa-solid fa-microchip"></i>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <div class="card-number-display">8948 xxxx xxxx 7894</div>
+                        <div class="card-bottom">
+                            <span>Holder Name</span>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" width="40" alt="Visa">
+                        </div>
+            </div>
+            <div class="payment-form">
+                    <div class="input-wrapper full-width">
+                        <label>Card Number</label>
+                        <div class="input-with-icon">
+                            <input type="text" value="5884 6241 4444 3333">
+                            <span class="valid-check">✓</span>
+                        </div>
+                    </div>
+                    <div class="input-row-grid">
+                        <div class="input-wrapper">
+                            <label>Expiry Date</label>
+                            <input type="text" placeholder="MM / YY">
+                        </div>
+                        <div class="input-wrapper">
+                            <label>CVC/CVV</label>
+                            <input type="password" placeholder="••••">
+                        </div>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="save-card" checked>
+                        <label for="save-card">Save Card</label>
+                    </div>
+                    <button class="btn-primary">Confirm and reserve</button>
+                    </div>
+            </div>
+        </section>
+        <aside class="sidebar-section">
+            <div class="sticky-sidebar">
+                <div class="sidebar-header">
+                    <h3>Switzerland Hotels and Places to Stay</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i> <span>4.8</span> <span class="reviews">(122 reviews)</span>
+                    </div>
+                </div>
+            <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=500&q=80" alt="Switzerland" class="sidebar-img">
+                
+                <div class="room-info">1 bedroom + 1 private room</div>
+                
+                <div class="dates-grid">
+                    <div>
+                        <label>Check in</label>
+                        <p>June 27, 2020</p>
+                    </div>
+                    <div>
+                        <label>Check out</label>
+                        <p>June 30, 2020</p>
+                    </div>
+                </div>
+                <div class="guests-info">
+                    <label>Guest</label>
+                    <p>2 guests</p>
+                </div>
+                <div class="booked-details">
+                    <h4>Booked details</h4>
+                    <div class="price-row">
+                        <span>$119 × 5nights</span>
+                        <strong>$833</strong>
+                    </div>
+                    <div class="price-row">
+                        <span>Ocupancy text and fee</span>
+                        <strong>-$125</strong>
+                    </div>
+                    <div class="price-row">
+                        <span>Service free</span>
+                        <strong>$103</strong>
+                    </div>
+                    <hr>
+                    <div class="price-row total-row">
+                        <span>Total</span>
+                        <strong>$833</strong>
+                    </div>
+                </div>
+                <div class="report-link">
+                    <a href="#">Report this property</a>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <div class="container">
+        <section class="promo-banner">
+            <div class="promo-content">
+                <h2>Get our pro offers</h2>
+                <p>Create a visual identity for your company, and an overall brand</p>
+            </div>
+            <div class="promo-form">
+                <input type="email" placeholder="Type your email here">
+                <button type="submit">Subscribe</button>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i class="fa-solid fa-plane-departure" style="color: #3b71fe;"></i>
+                    <span>TripGuide</span>
+                </div>
+                <p>This is the team that specializes in making sure in the find it a your interior looks cool</p>
+                <div class="theme-toggle">
+                    <button class="active"><i class="fa-solid fa-sun"></i></button>
+                    <button><i class="fa-solid fa-moon"></i></button>
+                </div>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Travel Booking</a></li>
+                    <li><a href="#">Flight Booking</a></li>
+                    <li><a href="#">Car Booking</a></li>
+                    <li><a href="#">Fivestar Hotel</a></li>
+                    <li><a href="#">Traveling</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Business</h4>
+                <ul>
+                    <li><a href="#">Success</a></li>
+                    <li><a href="#">About Locato</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Information</a></li>
+                    <li><a href="#">Travel Guide</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+                
+
+
+
+
+
+    </main>
+            
